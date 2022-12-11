@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(https://pbs.twimg.com/media/EfAujneUwAA0ktW.jpg:large)
+}
+
+.container {
+    position: absolute;
+    right: 3%;
+    bottom: 3%;
+    width: 350px;
+    height: 150px;
+    padding: 2px;
+    background-color: #FAF7F1;
+    border-radius: 1em;
+
+}
+
+.container >img{
+    position:absolute;
+    top: 50%;
+    right: -50px;
+    transform: translateY(-50%);
+    width: 150px;
+}
+
+.status-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border: 2px solid #e6d45a;
+    border-radius: 1em;
+}
+
+.line-box {
+    width: 100%;
+    height: 100%;
+}
+
+.power-bar {
+    float: right;
+    width: 75%;
+    height: 80%;
+    border-radius: 25px;
+}
+
+.power-bar-status {
+    width: 100%;
+    height: 100%;
+    background-image: repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25) 1px, transparent 1px, transparent 7px);
+    background-color: #3D271A;
+    border-radius: 25px;
+}
+
+.water-bar {
+    float: right;
+    width: 75%;
+    height: 80%;
+    border-radius: 25px;
+}
+
+.water-bar-status {
+    width: 50%;
+    height: 100%;
+    background-image: repeating-linear-gradient(223deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25) 1px, transparent 0px, transparent 2px);
+    background-color: #A99A8B;
+    border-radius: 25px;
+}
+
+.hungry-bar {
+    float: right;
+    width: 75%;
+    height: 80%;
+    border-radius: 25px;
+}
+
+.hungry-bar-status {
+    width: 75%;
+    height: 100%;
+    background-image: repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25) 1px, transparent 1px, transparent 6px);
+    background-color: #D1B28D;
+    border-radius: 25px;
+}
+
+.blood-bar {
+    float: right;
+    width: 75%;
+    height: 80%;
+    border-radius: 25px;
+}
+
+.blood-bar-status {
+    width: 90%;
+    height: 100%;
+    background-image: repeating-linear-gradient(315deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25) 3px, transparent -19px, transparent 5px);
+    background-color: #B86c56;
+    border-radius: 25px;
+}

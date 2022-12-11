@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://pbs.twimg.com/media/EfAujneUwAA0ktW.jpg:large);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    position: absolute;
+    right: 1%;
+    bottom: 1%;
+    width: 30rem;
+    height: 8rem;
+    transform: scale(0.8);
+}
+.status-box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+.heart-bar {
+    width: 92%;
+    height: 24%;
+    border-radius: 30rem;
+    border: 1px solid #DDA787;
+    background-image: repeating-linear-gradient(223deg, rgba(155, 153, 153, 0.279), rgba(255, 255, 255, 0.25) 1px, transparent 0px, transparent 2px);
+    background-color: #020202d9;
+}
+
+.heart-bar-status{
+    width: 90%;
+    height: 100%;
+    border-radius: 30rem;
+    background-color: #a61717;
+}
+.stamina-bar{
+    width: 88%;
+    height: 7%;
+    border-radius: 30rem;
+    margin-right: 10px;
+    border: 1px solid #DDA787;
+    background-image: repeating-linear-gradient(223deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25) 1px, transparent 0px, transparent 2px);
+    background-color: #020202d9;
+}
+
+.stamina-bar-status{
+    width: 50%;
+    height: 100%;
+    border-radius: 30rem;
+    background-color: #DEC655;
+}
+
+.line-circular{
+    width:100%;
+    height: 60%;
+    padding: 1%;
+    margin-top: 2px;
+    display: flex;
+    flex-direction: row;
+}
+
+.water-circular{
+    position: relative;
+    margin-left: 5px;
+    height: 57px;
+    width: 58px;
+    border-radius: 50%;
+    border-radius: 100%;
+
+    background: conic-gradient( #020202ac 0deg 0deg, #DEC655 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 32px
+}
+
+.water-circular::before{
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-image: repeating-linear-gradient(223deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25) 1px, transparent 0px, transparent 2px);
+    background-color: #020202d9;
+}
+
+
+.swim-circular{
+    position: relative;
+    margin-left: 5px;
+    height: 57px;
+    width: 58px;
+    border-radius: 50%;
+    background: conic-gradient( #020202ac 0deg 150deg, #DEC655 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 85px
+}
+
+.swim-circular::before{
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-image: repeating-linear-gradient(223deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25) 1px, transparent 0px, transparent 2px);
+    background-color: #020202d9;
+}
+
+.food-circular{
+    position: relative;
+    margin-left: 5px;
+    height: 57px;
+    width: 58px;
+    border-radius: 50%;
+    background: conic-gradient( #020202ac 0deg 90deg, #DEC655 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 144px;
+}
+
+.food-circular::before{
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-image: repeating-linear-gradient(223deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25) 1px, transparent 0px, transparent 2px);
+    background-color:  #020202d9;
+}
+
+.stress-circular{
+    position: relative;
+    margin-left: 5px;
+    height: 57px;
+    width: 58px;
+    border-radius: 50%;
+    background: conic-gradient(  #020202ac 0deg 0deg, #DEC655 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 206px;
+}
+
+.stress-circular::before{
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-image: repeating-linear-gradient(223deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25) 1px, transparent 0px, transparent 2px);
+    background-color: #020202d9;
+}
+.box-style{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("/external-file/new_bar_img.png");
+    background-position: center; 
+    background-size: cover;
+}
+
+

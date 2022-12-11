@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://pbs.twimg.com/media/EfAujneUwAA0ktW.jpg:large);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container{
+    position: absolute;
+    width: 800px;
+    height: 100px;
+    background-color: aqua;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.board-bar{
+    position: relative;
+    width: 80%;
+    height: 70%;
+    background-color: rgb(255, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+p{
+    color: white;
+}
