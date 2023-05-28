@@ -17,15 +17,18 @@
     <div class="container" id="overview-bank">
         <div class="header">
             <div class="user-name">
-                <p>SOMCHAT JAIDEE</p>
+                <i class="fa-solid fa-user fa-fade"></i>
+                <!-- <i class="fa-solid fa-droplet"></i> -->
+                <p>SOMCHAT</p>
             </div>
-            <button class="btn-close" onclick="closeBank()"></button>
-        </div>
-        <div class="wallet">
-            <p>100,200 $</p>
+            <div class="wallet">
+                <p>1,000,200 ฿</p>
+                <i class="fa-solid fa-sack-dollar fa-lg"></i>
+            </div>
+            <!-- <button class="btn-close" onclick="closeBank()"></button> -->
         </div>
         <div class="saving-account" id="account">
-            <p>19,000 $</p>
+            <p>19,000 ฿</p>
         </div>
         <div class="action-box">
             <button class="btn-deposit-money" id="btnDeposit" onclick="openNormalFinan('btnDeposit')"></button>
@@ -36,42 +39,42 @@
 
         <div class="detail-action">
             <div class="action-normal-money" id="normal">
-                <p id="text-num">จำนวนเงิน</p>
                 <div class="input-money-normal">
-                    <input type="text" id="input-money-deposit">
-                    <p id="dollar">$</p>
+                    <p id="text-num">จำนวนเงิน:</p>
+                    <input type="text" id="input-money-deposit" maxlength="14">
+                    <p id="dollar">฿</p>
                 </div>
             </div>
             <div class="action-normal-money" id="normal">
-                <p>จำนวนเงิน</p>
                 <div class="input-money-normal">
-                    <input type="text"  id="input-money-withdraw">
-                    <p id="dollar">$</p>
+                    <p id="text-num">จำนวนเงิน:</p>
+                    <input type="text"  id="input-money-withdraw" maxlength="14">
+                    <p id="dollar">฿</p>
                 </div>
             </div>
             <div class="action-transfer-money" id="tranfer">
-                <div class="id-box">
-                    <p>รหัสผู้รับ:</p>
-                    <input type="text" id="input-id">
-                </div>
                 <div class="money-box">
                     <p id="text-num">จำนวนเงิน:</p>
-                    <input type="text" id="input-money-transfer">
-                    <p id="dollar">$</p>
+                    <input type="text" id="input-money-transfer" maxlength="18">
+                    <p id="dollar">฿</p>
+                </div>
+                <div class="id-box">
+                    <p>รหัสผู้รับ:</p>
+                    <input type="text" id="input-id" maxlength="18">
                 </div>
             </div>
             <div class="action-quick-withdraw" id="quick">
                 <div class="line1">
-                    <button class="btn-money">100</button>
-                    <button class="btn-money">200</button>
-                    <button class="btn-money">300</button>
-                    <button class="btn-money">500</button>
+                    <button class="btn-money" id="quick-100" onclick="clickNumber('quick-100')">100</button>
+                    <button class="btn-money" id="quick-200" onclick="clickNumber('quick-200')">200</button>
+                    <button class="btn-money" id="quick-300" onclick="clickNumber('quick-300')">300</button>
+                    <button class="btn-money" id="quick-500" onclick="clickNumber('quick-500')">500</button>
                 </div>
                 <div class="line2">
-                    <button class="btn-money">1K</button>
-                    <button class="btn-money">5K</button>
-                    <button class="btn-money">10K</button>
-                    <button class="btn-money">100K</button>
+                    <button class="btn-money" id="quick-1k" onclick="clickNumber('quick-1k')">1K</button>
+                    <button class="btn-money" id="quick-5k" onclick="clickNumber('quick-5k')">5K</button>
+                    <button class="btn-money" id="quick-10k" onclick="clickNumber('quick-10k')">10K</button>
+                    <button class="btn-money" id="quick-100k" onclick="clickNumber('quick-100k')">100K</button>
                 </div>
             </div>
         </div>
