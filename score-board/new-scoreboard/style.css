@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://pbs.twimg.com/media/EfAujneUwAA0ktW.jpg:large);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container{
+    position: absolute;
+    width: 370px;
+    height: 160px;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.2);
+
+    background-image: url("/external-file/ui-scoreboard/bg_scoreboard.png");
+    background-position: center; 
+    background-size: cover;
+}
+
+.header{
+    width: 100%;
+    height: 16%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.online-box{
+    width: 50%;
+    height: 100%;
+    margin-left: 12%;
+    margin-top: 2%;
+    color: #f7dd6d;
+    font-family: 'Monotype Corsiva', sans-serif;
+    font-size: 2ch;
+    
+}
+
+.user-name{
+    width: 50%;
+    height: 100%;
+    margin-top: 2%;
+    text-align: right;
+    margin-right: 10%;
+
+
+    color: #f7dd6d;
+    font-family: 'Monotype Corsiva', sans-serif;
+    font-size: 2ch;
+}
+
+.board-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    /* background-color: aqua; */
+    
+}
+
+.left-box{
+    width: 100%;
+    height: 80%;
+    margin-left: 5%;
+    margin-right: 2%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.line1{
+
+    margin-top: 7%;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.line2, .line3{
+    margin-left: auto;
+    margin-top: 1%;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.police-number{
+    width: 50%;
+    height: 100%;
+
+    background-image: url("/external-file/ui-scoreboard/block_police_left.png");
+    background-position: center; 
+    background-size: cover;
+
+}
+
+.doctor-number{
+    width: 50%;
+    height: 100%;
+
+    background-image: url("/external-file/ui-scoreboard/block_doc_left.png");
+    background-position: center; 
+    background-size: cover;
+}
+
+.government-number{
+    width: 50%;
+    height: 100%;
+
+    background-image: url("/external-file/ui-scoreboard/block_spa_left.png");
+    background-position: center; 
+    background-size: cover;
+}
+
+.taxi-number{
+    width: 50%;
+    height: 100%;
+
+    background-image: url("/external-file/ui-scoreboard/block_dri_left.png");
+    background-position: center; 
+    background-size: cover;
+}
+
+.mechanic-number{
+    width: 50%;
+    height: 100%;
+
+    background-image: url("/external-file/ui-scoreboard/block_mecha_left.png");
+    background-position: center; 
+    background-size: cover;
+}
+
+
+.right-box{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: bisque; */
+}
+
+.id-member{
+    margin-top: 7%;
+    margin-left: 10%;
+    width: 71%;
+    height: 30%;
+    background-image: url("/external-file/ui-scoreboard/block_id_right.png");
+    background-position: center; 
+    background-size: cover;
+}
+
+.contact{
+    margin-top: 3%;
+    margin-left: 10%;
+    width: 71%;
+    height: 30%;
+    background-image: url("/external-file/ui-scoreboard/block_mail_right.png");
+    background-position: center; 
+    background-size: cover;
+
+}
+
+.career{
+    margin-top: 3%;
+    margin-left: 10%;
+    width: 71%;
+    height: 30%;
+    background-image: url("/external-file/ui-scoreboard/block_doc_right.png");
+    background-position: center; 
+    background-size: cover;
+}
+
+p {
+    margin-left: 28%;
+    margin-top: 4%;
+    text-align: center;
+    color: #32070e;
+    font-family: 'TS-kaewPet-NP', sans-serif;
+    font-size: 3ch;
+}

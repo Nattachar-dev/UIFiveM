@@ -98,6 +98,9 @@ function OnConfirm(msg,myYes){
         confirmBox.hide();
         closeBank();
     });
+    confirmBox.find(".no").unbind().click(function () {
+        confirmBox.hide();
+    });
     confirmBox.find(".yes").click(myYes);
     confirmBox.show();
 }

@@ -41,26 +41,26 @@
             <div class="action-normal-money" id="normal">
                 <div class="input-money-normal">
                     <p id="text-num">จำนวนเงิน:</p>
-                    <input type="text" id="input-money-deposit" maxlength="14">
+                    <input type="text" id="input-money-deposit" maxlength="14" oninput="this.value=this.value.replace(/[^0-9\s]/g,'');">
                     <p id="dollar">฿</p>
                 </div>
             </div>
             <div class="action-normal-money" id="normal">
                 <div class="input-money-normal">
                     <p id="text-num">จำนวนเงิน:</p>
-                    <input type="text"  id="input-money-withdraw" maxlength="14">
+                    <input type="text"  id="input-money-withdraw" maxlength="14" oninput="this.value=this.value.replace(/[^0-9\s]/g,'');">
                     <p id="dollar">฿</p>
                 </div>
             </div>
             <div class="action-transfer-money" id="tranfer">
                 <div class="money-box">
                     <p id="text-num">จำนวนเงิน:</p>
-                    <input type="text" id="input-money-transfer" maxlength="18">
+                    <input type="text" id="input-money-transfer" maxlength="18" oninput="this.value=this.value.replace(/[^0-9\s]/g,'');">
                     <p id="dollar">฿</p>
                 </div>
                 <div class="id-box">
                     <p>รหัสผู้รับ:</p>
-                    <input type="text" id="input-id" maxlength="18">
+                    <input type="text" id="input-id" maxlength="18" oninput="this.value=this.value.replace(/[^0-9\s]/g,'');">
                 </div>
             </div>
             <div class="action-quick-withdraw" id="quick">
@@ -80,13 +80,14 @@
         </div>
         <div class="enter-line">
             <!-- <input type="button" value="Show" onclick="OnConfirm();" /> -->
-            <button class="btn-enter" onclick="OnConfirm()">OK</button>
+            <button class="btn-enter" onclick="OnConfirm()"></button>
         </div>
         <div id="confirm">
-            <div class="message">Confirm ?</div>
-            <br />
-            <button class="yes">Yes</button>
-            <button class="yes">No</button>
+            <div class="message"> 
+                <p>ต้องการทำธุรกรรมใช่หรือไม่ ?</p>
+            </div>
+            <button class="yes"></button>
+            <button class="no"></button>
         </div>
     </div>
 </body>
