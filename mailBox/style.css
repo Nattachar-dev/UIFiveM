@@ -1,0 +1,464 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(https://pbs.twimg.com/media/EfAujneUwAA0ktW.jpg:large)
+}
+
+.container {
+    position: absolute;
+    right: 10%;
+    bottom: 5%;
+    width: 380px;
+    height: 525px;
+    padding: 2px;
+    transform: scale(0.8);
+    background-color: transparent;
+
+}
+
+#mail-box{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("/external-file/ui-mailbox/mailbox1.png");
+    background-position: center; 
+    background-size: cover;
+    visibility: visible;
+}
+
+.action-back{
+    position: absolute;
+    width: 5%;
+    height: 5%;
+    top: 0;
+    left: 0;
+    margin-top: 6%;
+    margin-left: 12%;
+
+    background-image: url("/external-file/ui-mailbox/back.png");
+    background-position: center; 
+    background-size: cover;
+}
+
+.mail-list{
+    width: 75%;
+    height: 70%;
+    margin-left: 5%;
+}
+
+.mail-scroll{
+    width: 100%;
+    height: 80%;
+    overflow-y: scroll;
+}
+
+.mail-scroll::-webkit-scrollbar{
+    background-color: #68686833;
+    border-radius: 1ch;
+    width: 10px;   
+}
+
+.mail-scroll::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.521);
+    border-radius: 1ch;
+  }
+
+.detail-mail-list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.detail-mail-list li {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin-top: 5%;
+
+    background-image: url("/external-file/ui-mailbox/mail_messagebox.png");
+    background-position: center; 
+    background-size: cover;
+}
+
+li img {
+    position: absolute;
+    margin-left: 7%;
+}
+
+li h2 {
+    margin-left: 15%;
+    color: #32070e;
+    font-family: 'Monotype Corsiva', sans-serif;
+    font-size: 2.6ch;
+}
+
+li h3 {
+    position: absolute;
+    right: 0;
+    margin-right: 10%;
+    margin-top: 2%;
+    color: #32070e;
+    font-family: 'Monotype Corsiva', sans-serif;
+    font-size: 1.8ch;
+}
+
+li p {
+    margin-left: 15%;
+    font-family: 'Quark', sans-serif;
+    font-size: 1.8ch;
+}
+
+.action-footer{
+    margin-top: 10%;
+    width: 100%;
+    height: 20%;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-button{
+    
+    width: 48%;
+    height: 70%;
+    background-image: url("/external-file/ui-mailbox/but_namelist.png");
+    background-position: center; 
+    background-size: cover;
+}
+
+.send-mail-button{
+    width: 48%;
+    height: 70%;
+   
+    background-image: url("/external-file/ui-mailbox/but_send.png");
+    background-position: center; 
+    background-size: cover;
+}
+
+
+#send-mail-box{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-image: url("/external-file/ui-mailbox/sendmail1.png");
+    background-position: center; 
+    background-size: cover;
+    visibility: hidden;
+}
+
+.mail-detail{
+    position: relative;
+    width: 70%;
+    height: 60%;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#contact-select{
+    width: 40%;
+    height: 6%;
+    margin-top: 12%;
+    margin-left: 47%;
+    background-color: transparent;
+    border: none;
+}
+
+
+.text-box{
+    width: 90%;
+    height: 60%;
+    margin-top: 20%;
+    margin-left: 10%;
+    border: none;
+    background-color: transparent;
+    text-align: top;
+}
+
+textarea{
+    resize: none;
+
+    color: #02246b;
+    font-family: 'Quark', sans-serif;
+    font-size: 2ch;
+}
+
+.confirm-mail-button{
+    width: 35%;
+    height: 9%;
+    margin-left: 5%;
+    margin-top: 5%;
+    background-image: url("/external-file/ui-mailbox/but_send.png");
+    background-position: center; 
+    background-size: cover;
+}
+
+
+#contact-list-box{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-image: url("/external-file/ui-mailbox/namelist1.png");
+    background-position: center; 
+    background-size: cover;
+    visibility: hidden;
+}
+
+.contact-detail{
+    width: 67%;
+    height: 49%;
+    margin-top: 5%;
+    margin-left: 8%;
+}
+
+.contact-header{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: right;
+    padding: 2%;
+}
+
+#add-button{
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: transparent;
+    background-image: url("/external-file/ui-mailbox/plus.png");
+    background-position: center; 
+    background-size: cover;
+}
+
+#remove-button{
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: transparent;
+    background-image: url("/external-file/ui-mailbox/delete.png");
+    background-position: center; 
+    background-size: cover;
+}
+
+.contact-list{
+    width: 98%;
+    height: 100%;
+    margin-top: 3%;
+
+}
+
+.contact-scroll{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.contact-scroll::-webkit-scrollbar{
+    background-color: #68686833;
+    border-radius: 1ch;
+    width: 10px;   
+}
+
+.contact-scroll::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.521);
+    border-radius: 1ch;
+  }
+
+.contact-all-list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-all-list li {
+    position: relative;
+    width: 90%;
+    height: 20px;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+li i{
+    position:absolute;
+    margin-left: 5%;
+}
+
+li span{
+    margin-left: 15%;
+    color: #000000;
+    font-family: 'Monotype Corsiva', sans-serif;
+    font-size: 2.4ch;
+}
+
+.send-button{
+    width: 35%;
+    height: 9%;
+    margin-left: 5%;
+    margin-top: 20%;
+    border: none;
+    background: transparent;
+    background-image: url("/external-file/ui-mailbox/but_send.png");
+    background-position: center; 
+    background-size: cover;
+}
+
+#add-contact-box{
+    position: absolute;
+    width: 325px;
+    height: 160px;
+    top: 30%;
+    left: 10%;
+
+
+    background-image: url("/external-file/ui-mailbox/add_name.png");
+    background-position: center; 
+    background-size: cover;
+    visibility: hidden;
+}
+
+#contact-name{
+    width: 66%;
+    height: 15%;
+    margin-top: 14%;
+    margin-left: 25%;
+    background-color: transparent;
+    border: none;
+}
+
+
+#contact-id{
+    width: 32%;
+    height: 15%;
+    margin-top: 2%;
+    margin-left: 58%;
+    background-color: transparent;
+    border: none;
+}
+
+
+#confirm-send-box{
+    position: absolute;
+    width: 319px;
+    height: 126px;
+    top: 30%;
+    left: 10%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-image: url("/external-file/ui-mailbox/delete_name.png");
+    background-position: center; 
+    background-size: cover;
+    visibility: hidden;
+}
+
+#remove-contact-box{
+    position: absolute;
+    width: 319px;
+    height: 126px;
+    top: 30%;
+    left: 10%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-image: url("/external-file/ui-mailbox/delete_name.png");
+    background-position: center; 
+    background-size: cover;
+    visibility: hidden;
+}
+
+
+.remove-contact-box span{
+    color: #000000;
+    font-family: 'Monotype Corsiva', sans-serif;
+    font-size: 2.4ch;
+}
+
+.action-line{
+    width: 80%;
+    height: 40%;
+    margin-top: 5%;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.confirm-button{
+    width: 42%;
+    height: 81%;
+    border: 0;
+    background: transparent;
+
+    background-image: url("/external-file/ui-mailbox/confirm1.png");
+    background-position: center; 
+    background-size: cover;
+}
+
+.cancel-button{
+    width: 42%;
+    height: 81%;
+    border: 0;
+    background: transparent;
+
+    background-image: url("/external-file/ui-mailbox/cancel1.png");
+    background-position: center; 
+    background-size: cover;
+}
+
+
+.action-add-contact-line{
+    width: 100%;
+    height: 20%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.add-contact-confirm-button{
+    width: 30%;
+    height: 110%;
+    margin-top: 1%;
+    border: 0;
+    background: transparent;
+
+    background-image: url("/external-file/ui-mailbox/confirm1.png");
+    background-position: center; 
+    background-size: cover;
+}
+
+.add-contact-cancel-button{
+    width: 30%;
+    height: 110%;
+    margin-top: 1%;
+    border: 0;
+    background: transparent;
+
+    background-image: url("/external-file/ui-mailbox/cancel1.png");
+    background-position: center; 
+    background-size: cover;
+}

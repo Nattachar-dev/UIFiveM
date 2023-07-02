@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="mail-box">
+            <div class="action-back"></div>
+            <div class="mail-list">
+                <div class="mail-scroll">
+                    <ul class="detail-mail-list">
+                            <!-- do not function openChat ja -->
+                        <li onclick="openChat()">
+                            <img src="/external-file/ui-mailbox/red_point.png"></img>
+                            <h3> 10:10 5/6/2023 </h3>
+                            <h2> Somchat </h2>
+                            <p> วันนี้วันดี </p>
+                        </li>
+                        <li>
+                            <img src="/external-file/ui-mailbox/red_point.png"></img>
+                            <h3> 10:10 5/6/2023 </h3>
+                            <h2> Charot </h2>
+                            <p>  ชื่อไรฮ้าฟ</p>
+                        </li>
+                        <li>
+                            <img src="/external-file/ui-mailbox/red_point.png"></img>
+                            <h3> 10:10 5/6/2023 </h3>
+                            <h2> Fund </h2>
+                            <p> มาหาหน่อย </p>
+                        </li>
+                        <li>
+                            <img src="/external-file/ui-mailbox/red_point.png"></img>
+                            <h3> 10:10 5/6/2023 </h3>
+                            <h2> EiEI </h2>
+                            <p> ไปไหน </p>
+                        </li>
+                        <li>
+                            <img src="/external-file/ui-mailbox/red_point.png"></img>
+                            <h3> 10:10 5/6/2023 </h3>
+                            <h2> Somchat </h2>
+                            <p> มาหาหน่อย </p>
+                        </li>
+                        <li>
+                            <img src="/external-file/ui-mailbox/red_point.png"></img>
+                            <h3> 10:10 5/6/2023 </h3>
+                            <h2> Somchat </h2>
+                            <p> มาหาหน่อย </p>
+                        </li>
+                        <li>
+                            <img src="/external-file/ui-mailbox/red_point.png"></img>
+                            <h3> 10:10 5/6/2023 </h3>
+                            <h2> Somchat </h2>
+                            <p> มาหาหน่อย </p>
+                        </li>
+                        <li>
+                            <img src="/external-file/ui-mailbox/red_point.png"></img>
+                            <h3> 10:10 5/6/2023 </h3>
+                            <h2> Somchat </h2>
+                            <p> มาหาหน่อย </p>
+                        </li>
+                      </ul>
+                </div>
+                <div class="action-footer">
+                    <div class="contact-button" onclick="openContactListBox('contact-list-box','mail-box')"></div>
+                    <div class="send-mail-button" onclick="openContactListBox('send-mail-box','mail-box')"></div>
+                </div>
+            </div>
+        </div>
+        <div id="contact-list-box">
+            <div class="action-back" onclick="openContactListBox('mail-box','contact-list-box')"></div>
+            <div class="contact-detail">
+                <div class="contact-header">
+                    <button id="add-button" onclick="plusContact()"></button>
+                    <button id="remove-button" onclick="removeContact()"></button>
+                </div>
+                <div class="contact-list">
+                    <div class="contact-scroll">
+                        <ul class="contact-all-list">
+                            <li>
+                                <i class="fa-solid fa-user"></i>
+                                <span> Test</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-user"></i>
+                                <span> Test</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-user"></i>
+                                <span> Test</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-user"></i>
+                                <span> Test</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-user"></i>
+                                <span> Test</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-user"></i>
+                                <span> Test</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-user"></i>
+                                <span> Test</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-user"></i>
+                                <span> Test</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-user"></i>
+                                <span> Test</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-user"></i>
+                                <span> Test</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <button class="send-button" onclick="openContactListBox('send-mail-box','contact-list-box')">
+            </button>
+        </div>
+        <div class="chat-box">
+        </div>
+        <div id="send-mail-box">
+            <div class="action-back" onclick="openContactListBox('mail-box','send-mail-box')"></div>
+            <div class="mail-detail">
+                <select id="contact-select">
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                </select>
+                <textarea class="text-box"> ไปงานวัดด้วยกันไหมฮ้าฟฟู่..</textarea>
+            </div>
+            <div class="confirm-mail-button"  onclick="OnConfirmSendMsg()"></div>
+        </div>
+        <!-- เหลือทำ แชท, plus, remove -->
+        <div id="add-contact-box">
+            <input id="contact-name"> </input>
+            <input id="contact-id"> </input>
+            <div class="action-add-contact-line">
+                <button class="add-contact-confirm-button" onclick="closeItself('add-contact-box')"></button>
+                <button class="add-contact-cancel-button" onclick="closeItself('add-contact-box')"></button>
+            </div>
+        </div>
+        <div id="remove-contact-box">
+            <span> ลบ "Somchai" ออกจากรายชื่อ</span>
+            <div class="action-line">
+                <button class="confirm-button" onclick="closeItself('remove-contact-box')"></button>
+                <button class="cancel-button" onclick="closeItself('remove-contact-box')"></button>
+            </div>
+        </div>
+        <div id="confirm-send-box">
+            <span> ยืนยันส่งจดหมาย</span>
+            <div class="action-line">
+                <button class="confirm-button" onclick="closeItself('confirm-send-box')"></button>
+                <button class="cancel-button" onclick="closeItself('confirm-send-box')"></button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
